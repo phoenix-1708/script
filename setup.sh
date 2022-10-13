@@ -9,6 +9,6 @@ sudo apt-get install -y jq
 sudo git clone https://github.com/akhilnarang/scripts bscripts && cd bscripts && bash setup/android_build_env.sh && cd ..
 sudo bash kernel_setup.sh
 sudo mkdir -p ~/.config/rclone
-sudo cp mnt/tmp/rom/script/rclone.conf ~/.config/rclone/rclone.conf
+sudo cp /mnt/tmp/rom/script/rclone.conf ~/.config/rclone/rclone.conf
 df -h && free -h && nproc
 sudo mkdir -p /tmp/ccache
