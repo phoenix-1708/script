@@ -1,12 +1,12 @@
 #!/bin/bash
 cd /mnt/tmp/rom
-source build/envsetup.sh
-lunch spark_sweet-user
+sudo source build/envsetup.sh
+sudo lunch spark_sweet-user
 export CCACHE_DIR=/tmp/ccache
 export CCACHE_EXEC=$(which ccache)
 export USE_CCACHE=1
-ccache -M 12G
-ccache -o compression=true
-ccache -z
+sudo ccache -M 12G
+sudo ccache -o compression=true
+sudo ccache -z
 export TZ=Asia/Dhaka
-mka bacon -j$(nproc --all)
+sudo mka bacon -j$(nproc --all)
