@@ -1,4 +1,5 @@
 #!/bin/bash
+cd /mnt/tmp/rom
 source build/envsetup.sh
 lunch spark_sweet-user
 export CCACHE_DIR=/tmp/ccache
