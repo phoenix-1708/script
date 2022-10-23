@@ -1,8 +1,12 @@
 #!/bin/bash
+cd ..
+cd tmp
+mkdir rom
+cd rom
 echo "initialising repo"
 sudo repo init --depth=1 --no-repo-verify -u https://github.com/Spark-Rom/manifest -b pyro -g default,-mips,-darwin,-notdefault
 echo "Syncing source"
-sudorepo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$(nproc --all) || repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8
+sudo repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$(nproc --all) || repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8
 echo "cloning device"
 sudo git clone https://github.com/phoenix-1708/android_device_xiaomi_sweet -b arrow-13.0 --depth=1 device/xiaomi/sweet
 echo "cloning vendor"
