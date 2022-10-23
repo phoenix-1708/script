@@ -11,4 +11,4 @@ sudo chmod +x setup.sh build.sh upload.sh sync.sh
 sudo mkdir -p ~/.config/rclone
 sudo cp rclone.conf ~/.config/rclone/rclone.conf
 df -h && free -h && nproc
-sudo mkdir -p //tmp/ccache
+sudo mkdir -p //os/ccache
