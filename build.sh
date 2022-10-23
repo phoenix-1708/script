@@ -1,8 +1,7 @@
 #!/bin/bash
-cd /mnt/tmp/rom
 sudo source build/envsetup.sh
 sudo lunch spark_sweet-user
-export CCACHE_DIR=/tmp/ccache
+export CCACHE_DIR=//tmp/ccache
 export CCACHE_EXEC=$(which ccache)
 export USE_CCACHE=1
 sudo ccache -M 12G
