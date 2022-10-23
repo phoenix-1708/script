@@ -1,6 +1,6 @@
 #!/bin/bash
 cd ..
-cd tmp
+cd os
 mkdir rom
 cd rom
 echo "initialising repo"
