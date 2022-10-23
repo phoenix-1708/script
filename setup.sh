@@ -7,7 +7,6 @@ sudo apt-get install -y openjdk-11-jdk
 sudo apt-get install -y wget
 sudo apt-get install -y jq
 sudo git clone https://github.com/akhilnarang/scripts bscripts && cd bscripts && bash setup/android_build_env.sh && cd ..
-cd script
 sudo chmod +x setup.sh build.sh upload.sh sync.sh
 sudo mkdir -p ~/.config/rclone
 sudo cp rclone.conf ~/.config/rclone/rclone.conf
